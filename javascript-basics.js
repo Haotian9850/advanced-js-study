@@ -20,6 +20,22 @@ function whatIsTrue(){
     }
 }
 
+/*
+*   JS匿名函数
+*/
+function addLater(a, b, callback){
+    setTimeout(function(){
+        let sum = a + b;
+        callback(sum);
+    }, 1000);
+}
+
+
+
 function demo(){
     whatIsTrue();
+
+    addLater(1, 2, function(result){
+        console.log('result: ', result);
+    });
 }
