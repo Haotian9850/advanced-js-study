@@ -7,7 +7,8 @@
  const hostname = '127.0.0.1';  //localhost
  const port = 3300;
 
- const server = http.createServer((req, res) => {
+ //res and req are of stream type. req: readable stream, res: writable stream
+ const server = http.createServer((req, res) => {   
      res.statusCode = 200;
      res.setHeader('Content-Type', 'text/plain');
      res.end('Server is running live!');
