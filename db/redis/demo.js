@@ -5,10 +5,12 @@ var redis = new Redis({
     "port": 6379
 });
 
+//insert through callback function
 redis.set('foo', 'bar', function(err, reply){
     console.log(err, reply);
 });
 
+//read through callback function
 redis.get('foo', function(err, result){
     console.log(err, result);
 });
