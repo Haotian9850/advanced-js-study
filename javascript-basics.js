@@ -20,9 +20,7 @@ function whatIsTrue(){
     }
 }
 
-/*
-*   JS匿名函数
-*/
+
 function addLater(a, b, callback){
     setTimeout(function(){
         let sum = a + b;
